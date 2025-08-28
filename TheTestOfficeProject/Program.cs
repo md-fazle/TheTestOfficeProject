@@ -16,7 +16,8 @@ namespace TheTestOfficeProject
             {
                 Console.WriteLine($"ID: {emp.Id}, Name: {emp.name}, Department: {emp.department}, Designation: {emp.Designation}, isActive: {emp.isActive}, Salary: {emp.salary}");
             }
-            Console.ReadLine();
+            Console.ReadLine(); 
+            // this is okay
         }
     }
 }
