@@ -36,6 +36,12 @@ namespace TheTestOfficeProject
                              e.salary,
                              d.DeptName
                          };
+             var avarageSalary = result.Average(e => e.salary);
+            Console.WriteLine($"Avarage Salary: {avarageSalary}");
+            var totalSalary = result.Sum(e => e.salary);
+            Console.WriteLine($"Total Salary: {totalSalary}");
+            var minSalary = result.Min(e => e.salary);
+            Console.WriteLine($"Min Salary: {minSalary}");
             foreach (var emp in result)
             {
                 Console.WriteLine($"ID: {emp.Id}, Name: {emp.name}, Department: {emp.department}, Designation: {emp.Designation}, isActive: {emp.isActive}, Salary: {emp.salary}, DeptName: {emp.DeptName}");
